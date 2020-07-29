@@ -1,0 +1,16 @@
+<p>sample works!</p>
+<!-- Directives -->
+
+
+<!-- <div *ngFor="let i of colors">
+    {{i}}
+</div> -->
+<select name=""id="">
+    <option value=""*ngFor="let name of names">{{names}}</option>
+</select>
+<select (change)="color=$event.target.value;check()"name=""id="">
+    <option value="{{i}}" *ngFor="let i of colors">{{i}}</option>
+</select>
+<p [ngStyle]="{'color':color}">welcome</p>
+<p [ngClass]="'blueActive'">Super</p>
+<p [ngClass]="{'blueActive':condition==true,'blueDisabled':condition==false}">nice</p>

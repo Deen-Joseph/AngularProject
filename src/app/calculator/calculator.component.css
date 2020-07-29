@@ -1,0 +1,52 @@
+.main{
+    text-align: center;
+    margin:2px;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    line-height: 3px;
+    border-radius: 0px; 
+}
+input{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 70%;
+    height: 10%;
+    border-radius: 0px;
+    font-size: 35px;
+}
+.operator{
+    margin-left: 3px;
+    width: 40px;
+    height: 40px; 
+    padding: 0px;
+    font-size: 25px; 
+    border-radius: 0px;
+    background-color: yellow;
+    color: red;
+}
+.value1,.value2{
+    margin: 5px; 
+}
+.value1 button{
+    width: 40px;
+    height: 40px; 
+    padding: 0px;
+    font-size: 25px; 
+}
+.value2 button{
+    width: 40px;
+    height: 40px; 
+    padding: 0px;
+    font-size: 25px; 
+}
+
+.equals{
+    width: 80px;
+    height: 40px; 
+    padding: 0px;
+    font-size: 25px; 
+    background-color: rgb(44, 25, 48);   
+    color: whitesmoke;
+}

@@ -1,0 +1,31 @@
+<p>calculator works!</p>
+<div class="main" style="margin-left:30%; background-color:gray; width: 500px;height:600px ;">
+ 
+    <input type="text" value="{{display}}" (input)="value1=$event.target.value" ><br>
+
+<!-- value2<input type="text" value="{{value2}}" (input)="value2=$event.target.value"><br> -->
+<div class="class1">
+<button class="operator" *ngFor="let op of ['+','-','*','/']" (click)="operator(op)">{{op}}</button>
+</div>
+<!-- result <input type="text" value="{{result}}" (input)="result=$event.target.value">  -->
+<button class="equals" (click)="results(option)">=</button>
+<div class="value1" *ngIf="option==''">    
+    <button *ngFor="let i of [1,2,3]" (click)="num(i)">{{i}}</button> <br>
+    <button *ngFor="let i of [4,5,6]" (click)="num(i)">{{i}}</button> <br>
+    <button class="end1" *ngFor="let i of [7,8,9]" (click)="num(i)">{{i}}</button> <br> 
+    <button *ngFor="let i of [0]" (click)="num(i)">{{i}}</button>
+
+</div>  
+<div class="value2" *ngIf="option!=''">    
+    <button *ngFor="let k of [1,2,3]" (click)="value(k)">{{k}}</button> <br>
+    <button *ngFor="let k of [4,5,6]" (click)="value(k)">{{k}}</button> <br>
+    <button *ngFor="let k of [7,8,9]" (click)="value(k)">{{k}}</button> <br>
+    <button *ngFor="let k of [0]" (click)="value(k)">{{k}}</button> 
+
+</div>  
+    <!-- value1= {{value1}} <br>
+   value2= {{value2}} <br>
+   option= {{option}}  -->
+</div> 
+
+

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+/* .blueActive{
+    color: yellow;
+    font-weight: bold;
+}
+.blueDisabled{
+    color: blue;
+    font-weight: bold;
+} */
+
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
